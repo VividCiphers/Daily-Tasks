@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Amrit-Task1-Signup Form</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <style>
+  body{
+    margin:0;
+  }
+  form h1{
+    margin:0.5em 0;
+  }
+  .container{
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .input-form{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+  }
+  .input-form label {
+    margin-right: auto;
+  }
+  .custom-form{
+    display: flex;
+    margin-bottom: 0.6em;
+    align-items:center;
+  }
+  .custom-form #label{
+    margin-right: auto;
+  }
+  form p{
+    font-size: 0.8em;
+  }
+  @media screen and (max-width:200px){
+    .input-form{
+      flex-direction: column;
+    }
+    .custom-form{
+      flex-direction: column;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <h1>Sign Up</h1>
+      <div class="input-form">
+      <label for="fullname">Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Amrit Pandey"><br>
+      </div>
+
+      <div class="input-form">
+      <label for="username">Choose Username:</label>
+      <input type="text" id="username" name="username" placeholder="a-pandey"><br>
+      </div>
+
+      <div class="input-form">
+      <label for="email">Provide Active Email:</label>
+      <input type="email" id="email" name="email" placeholder="apandey@email.com"><br>
+      </div>
+
+      <div class="input-form">
+      <label for="password1">Choose Password</label>
+      <input type="password" id="password1" name="password1"><br>
+      </div>
+
+      <div class="input-form">
+      <label for="password2">Confirm Password</label>
+      <input type="password" id="password2" name="password2"><br>
+      </div>
+
+      <div class="input-form">
+      <label for="dob">Date of Birth</label>
+      <input type="text" id="dob" name="dob"><br>
+      </div>
+
+      <div class="custom-form">
+        <label id="label">Gender</label>
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-female" name="gender" value="female"><br>
+      </div>
+
+      <div class="custom-form">
+      <label id="label">Field of Expertees</label>
+      <select name="occupation" id="occupation">
+        <option value="null">Not Specified</option>
+        <optgroup label="Front-End Developer">
+          <option value="designer">Designer</option>
+          <option value="optimizer">Optimizer</option>
+          <option value="quality_assure">Quality Assurer</option>
+        </optgroup>
+        <optgroup label="Back-End Developer">
+          <option value="php_engineer">PHP Engineer</option>
+          <option value="node_expert">NodeJS Expert</option>
+        </optgroup>
+      </select><br>
+      </div>
+      <p>
+        By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Vivid Ciphers and can opt out at any time.
+      </p>
+      <button type="submit" id="submit">Create an Account</button>
+    </form>
+  </div>
+  <script>
+      $("input[type=radio]").button();
+      $("select").selectmenu();
+      $('input:text, input:password')
+      .button()
+      .css({
+              'font' : 'inherit',
+              'color' : 'inherit',
+            'text-align' : 'left',
+             'outline' : 'none',
+              'cursor' : 'text',
+              'backgroundColor':'#fff'
+      });
+      $("input[type=email]").button().css({
+        'font' : 'inherit',
+        'color' : 'inherit',
+      'text-align' : 'left',
+       'outline' : 'none',
+        'cursor' : 'text'
+      });
+      $("#buttonset").buttonset();
+      $("#dob").datepicker();
+      $("#submit").button().css({
+        'backgroundColor':'rgb(28, 106, 0)',
+        'font-size':'1.3em',
+        'color':'aliceblue'
+      });
+  </script>
+</body>
+</html>
