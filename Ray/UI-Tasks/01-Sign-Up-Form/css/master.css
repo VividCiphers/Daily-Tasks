@@ -1,0 +1,134 @@
+@keyframes liftOff {
+    0%   { top:10px;
+            
+            }
+    25%  { 
+            top: -60px;   
+        }
+    50%  { 
+            top: -130px;
+        }
+    75%  {  
+            top: -200px;
+        }
+    100% { 
+            top:-270px;
+    
+        }
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(238,239,239,1);/* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, rgba(238,239,239,0), rgba(238,239,239,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(238,239,239,0), rgba(238,239,239,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(238,239,239,0), rgba(238,239,239,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(238,239,239,0), rgba(238,239,239,1)); /* Standard syntax */
+}
+
+.container{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    background: rgba(108,161,158,1); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(166,207,206,1) 20%, #fff 40%, rgba(108,161,158,1) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgba(166,207,206,1) 20%, #fff 40%, rgba(108,161,158,1) 30%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgba(166,207,206,1) 20%,#fff 40%, rgba(108,161,158,1) 30%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(166,207,206,1) 10%, #fff 40%, rgba(108,161,158,1) 90%); /* Standard syntax */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container form{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    color: #7EC0B0;
+    background: rgba(217,239,239,1); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-195deg, rgba(217,239,239,1) 20%, #fff 30%, rgba(238,239,239,1) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-195deg, rgba(217,239,239,1) 20%, #fff 30%, rgba(238,239,239,1) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-195deg, rgba(217,239,239,1) 20%,#fff 30%, rgba(238,239,239,1) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-195deg, rgba(166,207,206,0.1) 20%, #fff 30%, rgba(238,239,239,1) 100%); /* Standard syntax */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#space{
+    width: 100%;
+    height: 80px;
+    margin: 70px auto 0 auto;
+}
+
+.container form svg{
+    top: 65px;
+    left: 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+.container form #flying{
+    display: none;
+    transform: rotate(-45deg);
+    animation-duration: 5s;
+}
+
+#window{
+    top: 70px;
+    left: 85px;
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), inset 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#window #bottom{
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 80px;
+    position: absolute;
+    bottom: -10px;
+    z-index: 2;
+    background: rgba(255,255,255,0.4);
+}
+.container form h1{
+    width: 100%;
+    text-align: center;
+}
+
+.container form input{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #7EC0B0;
+    background: transparent;
+}
+
+#button{
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background: #7EC0B0;
+    margin-top: 20px;
+    border: 1px solid #7EC0B0;
+}
+
+#button:hover {
+    background: #fff;
+    color: #7EC0B0;
+    border: 1px solid #7EC0B0;
+}
+form p{
+    margin-top: 50px;
+}
