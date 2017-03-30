@@ -5,7 +5,7 @@ A collection of the daily tasks completed by the Vivid Ciphers members
 1. Make sure you're a member of the discord server to get tasks. 
 2. Fork the repository to your github account so you have a copy of it that you can make changes to. 
 3. Clone the repository that you just forked, it should be at located github.com/your_username/Daily-Tasks .
-4. Create a main folder with your name e.g Ray 
+4. Create a main folder with your username e.g Rayhatron 
     - Then a sub folder inside the main one named after the category of the task you're working on e.g "UI - UX Tasks"
     - Lastly create another folder with the name of the task inside the category based folder e.g "01- Sign up form"
 5. Work on your task in the appropriate folder. 
