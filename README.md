@@ -1,2 +1,2 @@
 # Daily-Tasks
-* Amrit Pandey Daily Task 1 Sign Up form (DONE)
+* A collection of the daily tasks completed by the Vivid Ciphers members
