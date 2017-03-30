@@ -35,3 +35,6 @@ select {
  	font-weight:bold;
  	
  }
+button:hover {
+ 	background-color:#8A2BE2;
+ }
