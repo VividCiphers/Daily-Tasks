@@ -1,0 +1,113 @@
+body {
+  margin: 95%;
+  width: 95%;
+  /* ms ( IE 10.0+ ) */
+  background:-ms-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
+  /* WebKit (Chrome 10.0+, safari 5.1+ )*/
+  background:-webkit-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
+  /* Moz ( Moz 3.6+ )*/
+  background:-moz-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
+  /* Opera ( opera 11.6+ )*/
+  background:-o-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
+}
+
+
+
+input[type="text"],
+textarea,
+textarea.form-control {
+ height: 50px;
+ margin: 0;
+ padding: 0 20px;
+ vertical-align: middle;
+ font-family: "roboto", Courier, monospace;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 50px;
+ -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+ -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+ -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+textarea,
+textarea.form-control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder {
+   color: #00308F;
+  }
+
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder {
+  color: #00308F;
+ }
+
+input[type="text"]:-webkit-input-placeholder, textarea::-webkit-input-placeholder,textarea.form-control:-webkit-input-placeholder {
+    color: #00308F;
+ }
+
+label {
+	font-weight: 400;
+  }
+
+
+/*=====Top content =====*/
+
+
+.form-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 10%;
+
+
+}
+
+.form-top {
+	padding:25px 25px 15px 25px;
+	text-align: left;
+	font-family: "roboto", Courier, monospace;
+
+}
+
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	text-align: left;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+
+
+#contact-name {
+  box-shadow: 2px 4px 5px #000;
+}
+
+#contact-email {
+  box-shadow: 2px 4px 5px #000;
+}
+
+#contact-antispam {
+  box-shadow: 2px 4px 5px #000;
+}
+
+#contact-message {
+  box-shadow: 2px 4px 5px #000;
+}
+
+/*===== Media queries =====*/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+}
