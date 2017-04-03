@@ -1,0 +1,9 @@
+/* CSS Document */
+
+#input_area1{
+	margin-top:50;
+	background-color:#FDEAD0;
+	
+	
+}
+#txt1:not(:focus){background-color:#FDEAD1}
