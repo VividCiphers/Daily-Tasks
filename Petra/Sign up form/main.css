@@ -88,18 +88,23 @@ label {
 
 #contact-name {
   box-shadow: 2px 4px 5px #000;
+  border-radius: 5px 5px 5px 5px;
+
 }
 
 #contact-email {
   box-shadow: 2px 4px 5px #000;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #contact-antispam {
   box-shadow: 2px 4px 5px #000;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #contact-message {
   box-shadow: 2px 4px 5px #000;
+  border-radius: 5px 5px 5px 5px;
 }
 
 /*===== Media queries =====*/
