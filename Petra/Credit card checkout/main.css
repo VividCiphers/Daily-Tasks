@@ -1,0 +1,18 @@
+.container{
+  height: 30em;
+  margin-top: 4em;
+  margin-left: 4em;
+  margin-right:4em;
+  margin-bottom: 4em;
+  background-color: #007FFF;
+}
+
+.left-side{
+  background-image: url(wallet-2125548_640.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+  margin-right: 43em;
+  background-color:#FDEE00;
+}
