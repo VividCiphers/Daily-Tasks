@@ -1,48 +1,44 @@
 <html>
-  <head>
-    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type">
-    <link href="login.css" rel="stylesheet">
-    <title></title>
-    <meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
-    <script>
+<head>
+<link href= "login.css" rel= stylesheet />
+    <title></title> 
+    <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+    <meta name="GENERATOR" content="Microsoft FrontPage Express 2.0" />
+<script>
 function clearContents(element) {
   element.value = '';
 }
 </script>
-  </head>
-  <body style="FONT-FAMILY: arial"> Login<span id="app"></span>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script type="text/babel" src="app.js">
-</script>
-    <script type="text/javascript">
+</head>
+<body style="FONT-FAMILY: arial">
+
+<script type="text/javascript">
  // Initial setting
  document.getElementsByClassName("input").blur(); 
  </script>
-    <ul>
-      <li>Enter name & password
-      </li>
-    </ul>
-    <form action="http://asimplestore.com/cgi/php/receiver.php" id="form1" method="post">
-      <div id="input_area1">
-  <textarea class="input" name="name" cols="20" rows="1" maxlength="20" id="txt1"
-		onfocus="if(this.value == 'Put name here.') this.value='';"
-		onblur="if(this.value == '') this.value='Put name here.';">
-Put name here.</textarea>
-        <br>
-	<textarea class="input" name="pass" cols="30" rows="1" maxlength="20" id="txt1"
-		onfocus="if(this.value == 'Enter password here.') this.value='';" 
-		onblur="if(this.value == '') this.value='Enter password here.';">
-Enter password here.</textarea>
-        
-        
-        <br>
-        
-        
-        <button>&nbsp;&nbsp;Send&nbsp;&nbsp;
-          </button>
-      </div>
-    </form>
-  </body>
+<form action="http://asimplestore.com/cgi/php/receiver.php" id="form1" method="post">
+<div id="input_area1">
+
+<h2>LOGIN</h2>
+
+<input type="text" class="input" name="name" cols="20" rows="1" maxlength="20" id="txt1" 
+onfocus="if(this.value == 'Put name here.') this.value='';" 
+onblur="if(this.value == '') this.value='Put name here.';">
+Name
+</input>
+<br>
+<input type="text" name="pass" class="input" id="txt1" 
+onfocus="if(this.value == 'Enter password here.') this.value='';" 
+onblur="if(this.value == '') this.value='Enter password here.';">
+Password
+</input>
+
+
+<br>	
+  
+<button >&nbsp;&nbsp;Send&nbsp;&nbsp;
+</button>
+</form>
+</div>
+</body>
 </html>
