@@ -1,18 +1,119 @@
-.container{
-  height: 30em;
-  margin-top: 4em;
-  margin-left: 4em;
-  margin-right:4em;
-  margin-bottom: 4em;
-  background-color: #007FFF;
+body{
+  /* ms ( IE 10.0+ ) */
+background:-ms-linear-gradient(174deg, rgba(67,127,118,1) 0.00%, rgba(4,4,4,1) 99.61% );
+
+/* WebKit (Chrome 10.0+, safari 5.1+ )*/
+background:-webkit-linear-gradient(174deg, rgba(67,127,118,1) 0.00%, rgba(4,4,4,1) 99.61% );
+
+/* Moz ( Moz 3.6+ )*/
+background:-moz-linear-gradient(174deg, rgba(67,127,118,1) 0.00%, rgba(4,4,4,1) 99.61% );
+
+/* Opera ( opera 11.6+ )*/
+background:-o-linear-gradient(174deg, rgba(67,127,118,1) 0.00%, rgba(4,4,4,1) 99.61% );
+
+/* standard */
+background:linear-gradient(174deg, rgba(67,127,118,1) 0.00%, rgba(4,4,4,1) 99.61% );
+
 }
 
-.left-side{
-  background-image: url(wallet-2125548_640.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 30em;
-  margin-right: 43em;
-  background-color:#FDEE00;
+
+.container{
+  background-color: #fff;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  margin: 2em 5em 2em 3em;
+  border: 1px solid #2ec4a5 ;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.row{
+  background-color: #fff;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px ;
+}
+
+img{
+  border-radius: 10px 10px 10px 10px;
+}
+
+.creditCardForm {
+    max-width: 650px;
+    font-family: 'raleway', sans-serif;
+    margin-left: 0em;
+    margin-right: 0em;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.creditCardForm .heading h1 {
+    text-align: center;
+    font-family: 'raleway', sans-serif;
+    color: #4c4e56;
+}
+
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.creditCardForm .payment .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+    box-shadow:1px 1px 1px #000;
+}
+
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+
+.creditCardForm .CVV {
+    width: 35%;
+}
+
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+
+.creditCardForm #expiration-date {
+    width: 49%;
+}
+
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+}
+
+.creditCardForm #pay-now {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.creditCardForm .payment .btn {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #2ec4a5;
+    color: #000;
+    border-radius: 15px 15px 15px 15px;
 }
