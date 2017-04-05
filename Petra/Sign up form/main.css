@@ -1,10 +1,12 @@
 body {
   margin: 95%;
   width: 95%;
- /* For browsers that do not support gradients */
-  background: #A1CAF1;
   /* Standard syntax */
   background: linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
+  /* For browsers that do not support gradients */
+   background: #A1CAF1;
+
   /* ms ( IE 10.0+ ) */
   background:-ms-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
 
@@ -16,6 +18,7 @@ body {
 
   /* Opera ( opera 11.6+ )*/
   background:-o-linear-gradient(309deg, rgba(99,214,250,1) 0.14%, rgba(30,142,140,1) 99.61% );
+
 
 }
 
