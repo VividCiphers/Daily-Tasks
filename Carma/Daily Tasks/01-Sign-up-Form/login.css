@@ -2,8 +2,8 @@
 
 #input_area1{
 	margin-top:50;
-	background-color:#FDEAD0;
-	
-	
+	background-color:#7Deade;
 }
-#txt1:not(:focus){background-color:#FDEAD1}
+input:not(:focus){background-color:#C2E2E2}
+button{padding-right: 20px;
+       padding-left: 20px}
