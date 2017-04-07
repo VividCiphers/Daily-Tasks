@@ -1,0 +1,380 @@
+/* 
+=============
+====Reset====
+=============
+*/
+body, section, nav, ul, li, a, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Raleway", Arial;
+}
+
+a { 
+  text-decoration: none;
+}
+
+/* 
+===================
+====Flex Layout====
+===================
+*/
+.flex-box { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-box .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.flex-cell.two-col { 
+  width: 46%;
+  margin: 0 2% 45px 2%;
+}
+
+.flex-cell.justify-end {
+  margin-left: auto;
+}
+
+.flex-center { 
+  align-items: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+
+/* 
+==================
+====Navigation====
+==================
+*/
+nav {
+  width: 100%;
+  background-color: #1C3144;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li { 
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* 
+==============
+====Header====
+==============
+*/
+.header {
+  background: -moz-linear-gradient(to top right, #73E3E5, #3EA1A3);
+  background: -webkit-linear-gradient(to top right, #73E3E5, #3EA1A3);
+  background: -o-linear-gradient(to top right, #73E3E5, #3EA1A3);
+  background: linear-gradient(to top right, #73E3E5, #3EA1A3);
+}
+
+h1 { 
+  font: small-caps 400 2em "Lato", Arial;
+  text-align: left;
+  margin-left: 10%;
+  letter-spacing: -1px;
+  display: inline-block;
+}
+
+h1 small { 
+  display: block;
+  font-size: .5em;
+  margin-top: -10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.plumber {
+  position: absolute;
+  transition: bottom 2s;
+  bottom: 0;
+}
+
+.plumber-slide {
+  transition: bottom 2s;
+  bottom: -400px;
+}
+
+.interactive-plumber {
+  width: 600px;
+  position: relative;
+}
+
+.arrow { 
+  font-size: 6em;
+  transform: rotate(25deg);
+  position: absolute;
+  animation-duration: .5s;
+  animation-name: changesize;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px 6px #000;
+  z-index: 3;
+}
+
+.arrow.stop-loop {
+  animation-iteration-count: 1;
+}
+
+.arrow.top-left {
+  top: -40px;
+}
+
+.arrow.bottom-left {
+  top: 300px;
+  transform: rotate(-25deg);
+}
+
+.arrow.top-right {
+  top: -40px;
+  left: 400px;
+  transform: rotate(-25deg);
+}
+
+.arrow.bottom-right {
+  top: 300px;
+  left: 400px;
+  transform: rotate(25deg);
+}
+
+
+svg {
+   fill: #F4E285;
+    bottom: 0;
+}
+
+.services-overview { 
+  padding: 25px;
+  color: #000;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: "Raleway";
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.services-overview p {
+  line-height: 150%;
+}
+
+.services-overview h3 {
+  color: #000;
+}
+
+.service-icon {
+  font-size: 7em;
+  display: block;
+  color: #3EA1A3;
+}
+
+.service-icon.alt {
+  color: #984C4A;  
+}
+
+
+.popout {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+.popout .popout-wrapper {
+  position: relative;
+}
+
+.popout img {
+  position: absolute;
+  left: -450px;
+  transition: all 2s;
+}
+
+.popout img.pop-in {
+    transition: all 2s;
+    transform: rotate(30deg);
+      left: -250px;
+}
+
+.popout p {
+  position: absolute;
+  width: 250px;
+  z-index: 3;
+  padding: 0px;
+  left: 80px;
+  top: 40px;
+}
+
+.popout .chat-bubble  {
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  
+  transition: opacity 2s;
+}
+
+.popout .chat-bubble.fade-out {
+  opacity: 0;
+}
+
+.popout .chat-bubble.fade-in {
+  opacity: 100%;
+}
+
+
+.popout .chat-bubble svg {
+  transform: rotate(10deg);
+}
+
+.btn {
+    border: none;
+  padding: 10px;
+  font-family: "Lato";
+  font-size: 1em;
+    color: #fff;
+    border-radius: 5px;
+  margin-top: 10px;
+  font-variant: small-caps;
+}
+
+.btn.btn-primary { 
+  background-color: #79ADDC;
+
+}
+
+.btn.btn-primary:hover {
+  background-color: #6E9EC8;
+}
+
+.btn.btn-alt {
+  background: none;
+  border: 1px solid #fff;
+}
+
+.btn.btn-alt:hover {
+  background-color: #6E9EC8;
+}
+
+
+.contact { 
+  padding: 5%;
+  background: linear-gradient(to top left, #EE7674, #984C4A);
+  color: white;
+  font-size: 1.5em;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+@keyframes changesize {
+  from {
+    font-size: 6em;
+  }
+  
+  to {
+    font-size: 7em;
+  }
+}
+
+textarea { 
+  height: 100px;
+}
+
+input, textarea { 
+  width: 50%;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #613130;
+  border-radius: 5px;
+}
+
+
+.contact-form button {
+  margin-left: 15%;
+  display: block;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder { 
+  font-family: "Raleway";
+}
+textarea::-moz-placeholder,
+input::-moz-placeholder { 
+  font-family: "Raleway";
+}
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder { 
+  font-family: "Raleway";
+}
+textarea:-moz-placeholder,
+input:-moz-placeholder { 
+  font-family: "Raleway";
+}
+
+@media (max-width: 800px){
+  .arrow {
+    display: none;
+  }
+  
+  .flex-box { 
+    text-align: center;
+  }
+  
+  .flex-box, .wrappr {
+    align-items: center;
+  }
+  
+  .flex-wrap .flex-cell{
+    width: 100%;
+  }
+  
+  .flex-wrap.justify-end {
+    margin-left: inherit;
+  }
+  
+  .popout .chat-bubble {
+    display:none;
+  }
+  
+  input, textarea { 
+    width: 100%;
+  }
+  
+  .contact { 
+    padding: 25px;
+  }
+}
+
+
