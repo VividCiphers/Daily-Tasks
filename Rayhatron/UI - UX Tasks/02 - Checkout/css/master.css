@@ -166,14 +166,28 @@ input{
     border-top-right-radius: 10px;
 }
 
-#details .labels{
-    color: #D5D2DD;
-    text-transform: uppercase;
+#details dl {
+	margin:0;
+	display: grid;
+	grid-template-columns: repeat( 3, 1fr );
+	grid-template-rows: 60px auto;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
-#details .metrics{
-    color: #336AC9;
+#details dt {
+	color: #D5D2DD;
+	text-transform: uppercase;
+	font-size: 18px;
+	grid-row: 1;
 }
+
+#details dd {
+    color: #336AC9;
+    margin:0;
+}
+
 #checkoutCard ul{
     list-style: none;
     display: flex;
@@ -191,15 +205,10 @@ input{
     margin-left: 70px;
     color: #336AC9;
 }
-#thumbContainer{
-    width: 0px;
-}
+
 #thumbnail{
-    position: relative;
-    left: -38px;
     width: 175px;
-    height: 74.5px;
-    /*transform: scale(0.5);*/
+    height: auto;
 }
 #checkoutCard form #cards{
     display: flex;
