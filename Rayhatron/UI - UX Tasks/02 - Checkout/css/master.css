@@ -292,3 +292,43 @@ footer a{
 footer a:hover{
     color: #336AC9;
 }
+
+@media screen and ( max-width: 746px )
+{
+	.content {
+		display: block;
+	}
+	
+	.content h1 {
+		margin: 1em;
+	}
+	
+	#checkoutNav {
+		width: auto;
+		height: auto;
+		margin: 0 0 1em 0;
+		border-radius: 0;
+		display: block;
+	}
+	
+	#checkoutNav ul {
+		display: flex;
+		justify-content: space-around;
+		min-width: 50%;
+		margin:0;
+	}
+	
+	#checkoutCard {
+		margin: auto;
+	}
+	
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+
+
+
