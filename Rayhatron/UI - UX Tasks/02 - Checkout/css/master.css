@@ -32,6 +32,7 @@ header div{
 }
 
 #menu{
+    min-width: 50px;
     width: 50px;
     height: 50px;
     display: flex;
@@ -48,6 +49,7 @@ header div{
 
 #cart{
     width: 150px;
+    min-width: 100px;
     background: #E22E8C;
     border-radius: 10px;
     text-transform: uppercase;
@@ -113,18 +115,20 @@ input{
 }
 
 #product{
-	width: 1000px;
-	height: 752px;
+	max-width: 1000px;
+	max-height: 752px;
 	border-radius: 10px;
 	overflow: hidden;
 }
 
 #product img{
-
+	object-fit: scale-down;
+	display: block;
+	max-width: 100%;
 }
 
 #checkoutCard{
-    width: 400px;
+    max-width: 400px;
     background: #FBFBFB;
     border-radius: 10px;
 }
