@@ -19,6 +19,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 header div{
@@ -64,13 +65,21 @@ header div{
 }
 
 .content{
+	display: grid;
+	grid-template-rows: [a] 93px [b] 109px [c] auto [d];
 
+	grid-template-columns: [a] 45px [b] minmax(300px,950px) [c] 50px [d] 350px [e];
 }
 
 .content h1{
     color: #fff;
     text-transform: uppercase;
     font-size: 32px;
+    text-align: center;
+    margin: 0;
+    
+    grid-row: b;
+    grid-column: d;
 }
 
 label{
@@ -99,6 +108,9 @@ input{
     background: #336AC9;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    
+    grid-row: c;
+    z-index: 2;
 }
 
 #checkoutNav ul{
@@ -108,6 +120,8 @@ input{
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
+    
+    grid-row: b / -1;
 }
 
 #checkoutNav ul i.fa {
@@ -123,18 +137,26 @@ input{
 	max-height: 752px;
 	border-radius: 10px;
 	overflow: hidden;
+	
+	grid-row: a / -1;
+	grid-column: b / d;
 }
 
 #product img{
-	object-fit: scale-down;
+	object-fit: cover;
 	display: block;
 	max-width: 100%;
+	height: 100%;
 }
 
 #checkoutCard{
     max-width: 400px;
     background: #FBFBFB;
     border-radius: 10px;
+    
+    grid-row: c;
+    grid-column: c / e;
+    align-self: start;
 }
 
 #details{
@@ -222,8 +244,7 @@ input{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px;
-    padding-left: 0;
+    padding: 10px 0;
 }
 
 #securityInfo label{
