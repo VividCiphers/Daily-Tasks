@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 135vh;
+  width: 100%;
+  background-image: url(COD-modern-warfare-2.jpg);
+  background-size: cover;
+
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  opacity:0.3;
+}
+
+li {
+    display: inline-grid;
+    width: 24%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.3em;
+}
+
+li a {
+    display: grid;
+    color: #fff;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #333;
+}
+
+
+.grid {
+  display: grid;
+  height: 125vh;l
+  width: 100%;
+  grid-template-columns: 50% 1fr;
+
+  }
+
+.header-content{
+  margin-top: 4em;
+  margin-left: 5em;
+  color: #000;
+  text-shadow:2px 2px 2px #fff;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+.head1 {
+  font-size: 2em;
+}
+
+.head3 {
+  font-size: 2em;
+}
+
+.form-content {
+  margin-top: 4em;
+  margin-right: 7em;
+  color: #fff;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h4 {
+  text-shadow:2px 2px 2px #fff;
+  color: #000;
+}
+
+
+form {
+  margin: 0 auto;
+  width: 200px;
+  }
+
+form div + div {
+  margin-top: 1em;
+}
+
+
+input {
+  width: 200px;
+  padding: .5em .7em .7em .7em;
+  box-sizing: border-box;
+  -moz-box-shadow:5px 5px 5px #000;
+  -webkit-box-shadow:5px 5px 5px #000;
+  box-shadow:5px 5px 5px #000;
+  border: 1px solid #000;
+  font-family: 'Russo One', sans-serif;
+  -moz-border-radius-topleft: 29px;
+  -moz-border-radius-topright:29px;
+  -moz-border-radius-bottomleft:29px;
+  -moz-border-radius-bottomright:29px;
+  -webkit-border-top-left-radius:29px;
+  -webkit-border-top-right-radius:29px;
+  -webkit-border-bottom-left-radius:29px;
+  -webkit-border-bottom-right-radius:29px;
+  border-top-left-radius:29px;
+  border-top-right-radius:29px;
+  border-bottom-left-radius:29px;
+  border-bottom-right-radius:29px;
+
+}
+
+button {
+  display: inline-grid;
+  text-align: center;
+  padding: .4em .7em .4em .7em;
+  font-size: 0.6em;
+  box-shadow:5px 5px 5px #000;
+  font-family: 'Russo One', sans-serif;
+  border:hidden 6px #fff;
+  -moz-border-radius-topleft: 29px;
+  -moz-border-radius-topright:29px;
+  -moz-border-radius-bottomleft:29px;
+  -moz-border-radius-bottomright:29px;
+  -webkit-border-top-left-radius:29px;
+  -webkit-border-top-right-radius:29px;
+  -webkit-border-bottom-left-radius:29px;
+  -webkit-border-bottom-right-radius:29px;
+  border-top-left-radius:29px;
+  border-top-right-radius:29px;
+  border-bottom-left-radius:29px;
+  border-bottom-right-radius:29px;
+  background: #FEE7CA;
+}
+
+  img {
+    margin-top:3.5em ;
+    border: 2px solid #000;
+    -moz-box-shadow: 1px 1px 1px #ebebeb;
+    -webkit-box-shadow: 1px 1px 1px #ebebeb;
+    box-shadow: 1px 1px 1px #ebebeb;
+  }
