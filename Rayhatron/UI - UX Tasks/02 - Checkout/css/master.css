@@ -192,10 +192,8 @@ input{
     list-style: none;
     display: flex;
     align-items: center;
-    width: 80%;
     justify-content: space-between;
     padding: 0;
-    margin: 20px auto;
     font-size: 18px;
 }
 
@@ -214,13 +212,10 @@ input{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 30px 0 0 0;
 }
 #checkoutCard form #cards ul{
     margin: 0;
-    padding-left: 10px;
-    width: 255px;
-
+    padding: 0;
 }
 #cards i.fa {
     font-size: 40px;
@@ -230,39 +225,29 @@ input{
     color: #CA136B;
 }
 #cards label{
-    margin: 0 0 0 20px;
 }
 #cardNumber{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0 0 0;
 }
 #cardNumber label{
-    width: 100%;
-    margin: 0 0 30px 20px;
+    flex: 100%;
 }
 #cardNumber input{
-    margin-left: 20px;
     background: #D5D2DD;
     text-align: center;
 }
 
 #securityInfo{
-    width: 100%;
-    margin: 20px 0 0 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 0;
 }
 
 #securityInfo label{
-    width: 30%;
     text-align: center;
 }
 
 #securityInfo input{
-    margin: 20px 0 0 0;
     background: #D5D2DD;
 }
 
@@ -271,7 +256,6 @@ input{
 }
 
 #btnSubmit{
-    margin: 10px 0 0 0;
     text-align: center;
     width: 100%;
     border: none;
