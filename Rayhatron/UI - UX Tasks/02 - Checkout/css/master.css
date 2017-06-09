@@ -91,7 +91,7 @@ label{
 
 input{
     color: #CA136B;
-    border: none;
+    border: 1px solid rgb(226, 225, 232);
     border-radius: 5px;
     text-align: center;
     padding: 5px 0 5px 12px;
@@ -208,6 +208,21 @@ input{
     width: 175px;
     height: auto;
 }
+
+
+form {
+padding-top: 1em;
+}
+
+form > * {
+padding: 0 0.8em;
+margin-bottom: 1.5em;
+}
+
+form > :last-child {
+margin:0;
+}
+
 #checkoutCard form #cards{
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +231,7 @@ input{
 #checkoutCard form #cards ul{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 #cards i.fa {
     font-size: 40px;
@@ -226,34 +242,46 @@ input{
 }
 #cards label{
 }
+
 #cardNumber{
-    display: flex;
-    flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 10px;
 }
+
 #cardNumber label{
-    flex: 100%;
+grid-column: 1 / -1;
 }
+
 #cardNumber input{
-    background: #D5D2DD;
-    text-align: center;
+padding: 0;
+/* 
+the following are required to fix what 
+seems to be buggy behaviour between inputs 
+and css grid in firefox. 
+The width and min-width are especially important.
+If the elements were spans instead of inputs this wouldn't be necessary.
+ */
+	width: auto;
+	height: auto;
+	min-width: 60px;
+	min-height: 35px;
 }
 
-#securityInfo{
-    display: flex;
-    flex-wrap: wrap;
+#securityInfo {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
 }
 
-#securityInfo label{
-    text-align: center;
+#securityInfo input {
+	padding: 0;
+	width: auto;
+	height: auto;
+	min-width: 60px;
+	min-height: 35px;
 }
 
-#securityInfo input{
-    background: #D5D2DD;
-}
-
-#securityInfo input[type="text"]{
-    padding: 5px 10px;
-}
 
 #btnSubmit{
     text-align: center;
